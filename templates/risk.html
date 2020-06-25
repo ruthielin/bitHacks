@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+{% block content %}
+   <div class="risk">
+     <h1>YOUR RISK</h1>
+     <p>This is where we will evaluate your risk. </p>
+       <form action="/results">
+           <h3>Where do you live?</h3>
+           <b><label for="county">County:</label></b><br>
+           <input type="text" id="county" name="county"><br>
+           <b><label for="state">State:</label></b><br>
+           <input type="text" id="state" name="state"><br><br>
+           <b>Is your area generally liberal or conservative?</b><br>
+           <input type="radio" id="lib" name="lib">
+           <label for="lib">Liberal</label><br>
+           <input type="radio" id="con" name="con">
+           <label for="con">Conservative</label><br><br>
+
+           <b>Do people wear masks?</b><br>
+           <input type="radio" id="yes" name="yes">
+           <label for="yes">Yes</label><br>
+           <input type="radio" id="no" name="no">
+           <label for="no">No</label><br><br>
+
+           <h3>Your information</h3>
+           <b><label for="age">Age:</label></b><br>
+           <input type="text" id="age" name="age"><br><br>
+
+           <b>Race:</b><br>
+           <input type="radio" id="white" name="white">
+           <label for="white">White</label><br>
+           <input type="radio" id="black" name="black">
+           <label for="black">Black/African American</label><br>
+           <input type="radio" id="indian" name="indian">
+           <label for="indian">American Indian</label><br>
+           <input type="radio" id="asian" name="asian">
+           <label for="asian">Asian</label><br>
+           <input type="radio" id="his" name="his">
+           <label for="his">Hispanic</label><br><br>
+
+           <b>Gender:</b><br>
+           <input type="radio" id="male" name="male">
+           <label for="male">Male</label><br>
+           <input type="radio" id="female" name="female">
+           <label for="female">Female</label><br>
+           <input type="radio" id="other" name="oth">
+           <label for="other">Other</label><br><br>
+
+           <b>Do you have existing medical conditions?</b><br>
+           <input type="radio" id="yes2" name="yes2">
+           <label for="yes2">Yes</label><br>
+           <input type="radio" id="no2" name="no2">
+           <label for="no2">No</label><br><br>
+
+           <b>Are you currently pregnant?</b><br>
+           <input type="radio" id="yes3" name="yes3">
+           <label for="yes3">Yes</label><br>
+           <input type="radio" id="no3" name="no3">
+           <label for="no3">No</label><br><br>
+
+           <b>Do you work in the medical field?</b><br>
+           <input type="radio" id="yes4" name="yes4">
+           <label for="yes4">Yes</label><br>
+           <input type="radio" id="no4" name="no4">
+           <label for="no4">No</label><br><br>
+
+           <input type="submit" value="Submit"><br>
+
+           <img src="https://media.timeout.com/images/105654872/image.jpg"
+                alt="BLM2" width="720">
+       </form>
+
+   </div>
+{% endblock %}
